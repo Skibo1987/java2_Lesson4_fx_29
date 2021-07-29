@@ -6,6 +6,7 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
 <BorderPane fx:controller="sample_1.Controller"
             xmlns:fx="http://javafx.com/fxml">
 
@@ -19,16 +20,16 @@
         </MenuBar>
     </top>
     <center>
-
+        <Slider fx:id="slider" max="100" showTickMarks="true" showTickLabels="true" onMouseReleased="#sliderOnMouseReliase"/>
     </center>
     <bottom>
         <HBox>
             <Button fx:id="btn1" text="btn1"/>
-            <Button  text="btn2"/>
-            <Button  text="btn3"/>
-            <Button  text="btn4" prefWidth="150"/>
-            <Button  text="btn5"/>
-            <Label text="Value:"/>
+            <Button text="btn2"/>
+            <Button text="btn3"/>
+            <Button text="btn4" prefWidth="150"/>
+            <Button text="btn5"/>
+            <Label fx:id="label" text="Value:"/>
         </HBox>
 
     </bottom>

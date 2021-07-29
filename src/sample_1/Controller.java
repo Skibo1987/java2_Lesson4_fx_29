@@ -5,11 +5,18 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.Slider;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 public class Controller {
     @FXML
     public Button btn1;
+    @FXML
+    public Slider slider;
+    @FXML
+    public Label label;
 
     @FXML
     public void clickClose(ActionEvent actionEvent) {
@@ -19,6 +26,10 @@ public class Controller {
             stage.close();
         });
 
+    }
+
+    public void sliderOnMouseReliase(MouseEvent mouseEvent) {
+    label.setText(String.format("Value: %.0f", + slider.getValue()));
     }
 }
 

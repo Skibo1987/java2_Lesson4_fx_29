@@ -1,0 +1,16 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import java.net.URL?>
+<VBox fx:id="vbox" fx:controller="sample_2.Controller"
+      xmlns:fx="http://javafx.com/fxml" alignment="center">
+    <stylesheets>
+        <URL value="@/css/style.css/"/>
+    </stylesheets>
+
+    <Button fx:id="addBtn" text="add a btn" onAction="#clickAddButton"/>
+
+
+
+</VBox>

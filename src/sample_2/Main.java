@@ -1,4 +1,4 @@
-package sample;
+package sample_2;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -11,8 +11,8 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Домашнее задание - Чат");
-        primaryStage.setScene(new Scene(root, 650, 550));
+        primaryStage.setTitle("Add Component");
+        primaryStage.setScene(new Scene(root, 600, 500));
         primaryStage.show();
 
 

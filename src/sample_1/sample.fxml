@@ -1,0 +1,43 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Label?>
+<BorderPane fx:controller="sample_1.Controller"
+            xmlns:fx="http://javafx.com/fxml">
+
+    <top>
+        <MenuBar>
+            <Menu text="File">
+                <MenuItem text="Open"/>
+                <MenuItem text="Save"/>
+                <MenuItem text="Close" onAction="#clickClose"/>
+            </Menu>
+        </MenuBar>
+    </top>
+    <center>
+
+    </center>
+    <bottom>
+        <HBox>
+            <Button fx:id="btn1" text="btn1"/>
+            <Button  text="btn2"/>
+            <Button  text="btn3"/>
+            <Button  text="btn4" prefWidth="150"/>
+            <Button  text="btn5"/>
+            <Label text="Value:"/>
+        </HBox>
+
+    </bottom>
+    <left>
+
+    </left>
+    <right>
+
+    </right>
+
+
+</BorderPane>
